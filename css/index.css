@@ -21,7 +21,6 @@
 
 #thank_you_screen{
     height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
