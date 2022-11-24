@@ -63,7 +63,7 @@ function nextQuestion()
 
 
     //questionDescUI.textContent = currentQuestion.question;
-    questionTitleUI.textContent = currentQuestion.question
+    questionTitleUI.innerHTML = currentQuestion.question
     //questionCountUI.textContent = currentQuestionCount + "/" + startQuestionCount;
     console.log(currentQuestion)
     
@@ -157,7 +157,8 @@ export function startGame()
     for(let i = 3; i > GameManager.lives; i--){
         let heart = document.querySelector(".heart")
 
-        heart.remove()
+        heart.classList.add("empty")
+        heart.classList.remove("heart")
 
     }
 

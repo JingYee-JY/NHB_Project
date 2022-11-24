@@ -260,7 +260,8 @@ function onCatchGene(gene, element)
         GameManager.setLives(lives)
 
         let heart = document.querySelector(".heart")
-        heart.remove()
+        heart.classList.add("empty")
+        heart.classList.remove("heart")
         if(GameManager.lives == 0){
             GameManager.end("Falling Genes", removeAllGenes, GameManager.timerVariable, gravityTimer)
         }

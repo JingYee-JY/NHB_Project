@@ -85,7 +85,8 @@ export var listOfFlowers;
 function initFlowers()
 {
     listOfFlowers = {
-        "OTC BUILDING" : new Flower("OTC BUILDING", ["A", "B", "C", "D", "E", "F"], `The National Monument testifies to the Chinese pioneers’ spirit of mutual assistance and their generosity towards the poor and needy. Apart from being a medical facility, the building also housed various Chinese guilds and served as the HQ of the Singapore Chinese Chamber of Commerce when it was first established. Read more on <span class="hightlight">Roots.sg</span>`,
+        "OTC BUILDING" : new Flower("OTC BUILDING", ["A", "B", "C", "D", "E", "F"], 
+        `The National Monument testifies to the Chinese pioneers’ spirit of mutual assistance and their generosity towards the poor and needy. Apart from being a medical facility, the building also housed various Chinese guilds and served as the HQ of the Singapore Chinese Chamber of Commerce when it was first established. Read more on <a href="https://www.roots.gov.sg/" target="_blank" class="hightlight">Roots.sg`,
             './models/chiku/Chiku.fbx', 15, 0.5,
             "sounds/chiku.mp3", fallingGenes, [1], 
             ["./css/main_menu/carousel/chiku/1.png",
@@ -93,7 +94,8 @@ function initFlowers()
                 "./css/main_menu/carousel/chiku/3.png"],
             "./css/plants/otcBuilding.png"),
 
-        "PULUT TAI TAI" : new Flower("PULUT TAI TAI",["A", "B", "C", "D", "E", "F"], `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <span class="hightlight">Roots.sg</span>`,
+        "PULUT TAI TAI" : new Flower("PULUT TAI TAI",["A", "B", "C", "D", "E", "F"], 
+        `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <a href="https://www.roots.gov.sg/" target="_blank" class="hightlight">Roots.sg`,
             './models/durian/Durian.fbx', 8, 0.5,
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", fallingGenes, [4, 5],
             ["./css/main_menu/carousel/chiku/1.png",
@@ -124,7 +126,7 @@ function initFlowers()
 
                     "C"
 
-                )], `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <span class="hightlight">Roots.sg</span>`,
+                )], `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <a href="https://www.roots.gov.sg/" class="hightlight">Roots.sg`,
                 './models/durian/Durian.fbx', 8, 0.5,
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", mcq, [1],
             ["./css/main_menu/carousel/jambu/1.png",
@@ -134,7 +136,7 @@ function initFlowers()
                 "./css/main_menu/carousel/jambu/5.png"],
             "./css/plants/jambu.png"),
 
-            "OTC BUILDING1" :new Flower("OTC BUILDING", [new Question("How many courtyards does the building have?", 
+            "OTC BUILDING1" :new Flower("OTC BUILDING", [new Question("How many <br> courtyards does <br> the building have?", 
         {"A" : "A) 2",
             "B" : "B) 3",
             "C" : "C) 4"},
@@ -150,7 +152,7 @@ function initFlowers()
                 "./css/main_menu/carousel/chiku/3.png"],
             "./css/plants/otcBuilding.png"),
 
-        "PULUT TAI TAI1" : new Flower("PULUT TAI TAI",[new Question("Which ingredient is NOT needed to make Pulut Tai Tai?", 
+        "PULUT TAI TAI1" : new Flower("PULUT TAI TAI",[new Question("Which ingredient is <br> NOT needed to make <br> Pulut Tai Tai?", 
                 {"A" : "A) Glutinous rice",
                     "B" : "b) Coconut milk",
                     "C" : "C) Gula melaka"},

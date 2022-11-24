@@ -187,6 +187,10 @@
     font-weight: 500;
 }
 
+a:hover{
+    color: #F0AC00;
+    text-decoration: none;
+}
 .hide {
     display: none !important;
 }
