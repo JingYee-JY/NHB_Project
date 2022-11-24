@@ -102,6 +102,9 @@ export function nextGame(object, gameName, clearGame,timerVariable, ...timerVari
 
     clearGame();
     document.getElementById(gameName).remove();
+    
+    document.body.style.overflowY = "scroll";
+    document.documentElement.style.overflowY = "scroll";            
 
     Main.setlowerInfo(Main.listOfFlowers[object + 1]);
     Main.onGameInfoLoad();
