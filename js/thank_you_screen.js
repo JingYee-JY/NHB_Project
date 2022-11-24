@@ -1,6 +1,6 @@
 ﻿import * as Main from "./main_screen.js";
 import  * as CameraScreen from "./index.js";
-
+import  * as Selection from "./selection_screen.js";
 
 export function registerThankYouScreen(lose)
 {
@@ -81,7 +81,7 @@ export function registerThankYouScreen(lose)
             console.log("OTC")
             localStorage.setItem("flower", "OTC BUILDING");
 
-            onLoad();
+            Selection.onLoad();
             
         });
 
@@ -90,7 +90,7 @@ export function registerThankYouScreen(lose)
             console.log("PULUT")
             localStorage.setItem("flower", "PULUT TAI TAI");
             
-            onLoad()
+            Selection.onLoad()
 
         });
         

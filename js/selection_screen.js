@@ -8,7 +8,7 @@ const button1 = document.getElementById("selection_button1")
 
 const button2 = document.getElementById("selection_button2")
 
-document.getElementById("selection_button1").addEventListener("mousedown", function()
+button1.addEventListener("mousedown", function()
         {
 
             console.log("OTC")
@@ -18,7 +18,7 @@ document.getElementById("selection_button1").addEventListener("mousedown", funct
             
         });
 
-document.getElementById("selection_button2").addEventListener("mousedown", function()
+button2.addEventListener("mousedown", function()
         {
             console.log("PULUT")
             localStorage.setItem("flower", "PULUT TAI TAI");
@@ -27,8 +27,13 @@ document.getElementById("selection_button2").addEventListener("mousedown", funct
 
         });
 
-function onLoad()
+export function onLoad()
 {
+    document.body.style.overflowY = "hidden";
+    document.documentElement.style.overflowY = "hidden";   
+
+    let loadingScreen = document.getElementById("selection_screen");
+    let mainScreen = document.getElementById("main_screen");
         loadingScreen.classList.add("fade");
         loadingScreen.classList.remove("starting")
         loadingScreen.classList.remove("visible")

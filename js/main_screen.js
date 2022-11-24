@@ -174,12 +174,15 @@ export function start(){
 
     if(!infoInit) 
     {
-        initInformation()
+        initGames();
+        initFlowers();
     }
-    else
-    {
-        window.clearInterval(timerVariable);
-    }
+
+    initInformation()
+    //else
+    //{
+    //    window.clearInterval(timerVariable);
+    //}
 }
 
 function openImageModal() 
@@ -280,9 +283,6 @@ export function initInformation()
     try {
 
 
-
-        initGames();
-        initFlowers();
 
         imageModal = document.getElementById("start-div");
         document.getElementById("image_anchor").ontouchstart = openImageModal;
