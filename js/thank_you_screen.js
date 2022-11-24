@@ -75,6 +75,24 @@ export function registerThankYouScreen(lose)
         document.getElementById("selection_screen").classList.remove("hide");
         document.getElementById("selection_screen").classList.remove("fade");
 
+        document.getElementById("selection_button1").addEventListener("mousedown", function()
+        {
+
+            console.log("OTC")
+            localStorage.setItem("flower", "OTC BUILDING");
+
+            onLoad();
+            
+        });
+
+        document.getElementById("selection_button2").addEventListener("mousedown", function()
+        {
+            console.log("PULUT")
+            localStorage.setItem("flower", "PULUT TAI TAI");
+            
+            onLoad()
+
+        });
         
         //Main.initInformation();
         //CameraScreen.cameFromGame();

@@ -8,7 +8,7 @@ const button1 = document.getElementById("selection_button1")
 
 const button2 = document.getElementById("selection_button2")
 
-button1.addEventListener("mousedown", function()
+document.getElementById("selection_button1").addEventListener("mousedown", function()
         {
 
             console.log("OTC")
@@ -18,7 +18,7 @@ button1.addEventListener("mousedown", function()
             
         });
 
-button2.addEventListener("mousedown", function()
+document.getElementById("selection_button2").addEventListener("mousedown", function()
         {
             console.log("PULUT")
             localStorage.setItem("flower", "PULUT TAI TAI");
