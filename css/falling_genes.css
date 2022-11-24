@@ -125,7 +125,7 @@ div[id='Falling Genes'], #MCQ {
 .scoreBottom {
     width: 100%;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
 }
 
 .progress{
