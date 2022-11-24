@@ -131,10 +131,10 @@ div[id='Falling Genes'], #MCQ {
 .progress{
     height: 30px;
     margin: auto;
-    width: 70%;
+    width: 260px;
     position: relative;
     background-color: transparent;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     overflow: hidden;
 }
 
