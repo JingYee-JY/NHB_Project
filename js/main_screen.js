@@ -173,6 +173,8 @@ function initFlowers()
 export function start(){
     console.log(flowerInformation,"test")
 
+    document.getElementById("threeD_canvas_icon2").style.opacity = 1;
+    document.getElementById("threeD_canvas_icon2").style.animation = "flashing 3s infinite"
     if(!infoInit) 
     {
         initGames();
