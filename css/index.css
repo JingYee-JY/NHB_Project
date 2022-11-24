@@ -1,0 +1,37 @@
+﻿.splash_screen_unloaded {
+    background: #1622AB;
+}
+
+.splash_screen_loaded {
+
+    background: url("splash_screen/background.svg") !important;
+}
+
+#splash_screen {
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    background: #1622AB;
+
+
+}
+
+#thank_you_screen{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("main_menu/background.svg");
+}
+
+#selection_screen{
+    background: url("selection/background.svg");
+}
+
+#main_screen{
+    background: url("main_menu/background.svg");
+}

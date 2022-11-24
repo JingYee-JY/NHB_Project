@@ -1,0 +1,16 @@
+﻿#spinner-border-div {
+
+    text-align: center;
+    display: block;
+    height: 100vh;
+    
+
+}
+
+.spinner-border {
+    height: 100px;
+    width: 100px;
+
+    margin-top: 15em;
+
+}

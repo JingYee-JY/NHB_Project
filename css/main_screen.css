@@ -1,0 +1,396 @@
+﻿html, body {
+    
+    
+    background: #1622AB;
+    
+    color: white;
+   
+    overflow-y: scroll;
+    
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Roboto', serif;
+
+}
+
+.hideO {
+    opacity: 0;
+}
+
+#hide_camera,#audio-player, #img_canvas_icon{
+    visibility: hidden;
+}
+
+#threeD_canvas_icon {
+    position: absolute;
+    
+  
+
+   
+
+    bottom: 1%;
+  
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+#threeD_canvas_icon2 {
+    position: absolute;
+    
+  
+
+    width: 97%;
+
+    bottom: -30%;
+  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img_canvas_icon {
+    position: absolute;
+
+
+    bottom: -5%;
+    right: -5%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.navbar {
+    
+
+    padding: 0px 20px 20px !important;
+    z-index: 300;
+    width: 100%;
+    height: 110px;
+
+}
+
+.navbar_image-modal {
+
+
+    padding: 20px 20px 20px !important;
+    z-index: 300;
+    width: 100%;
+    height: 60px;
+
+}
+
+#start_of_main {
+    text-align: center;
+    background-attachment: scroll;
+}
+
+.round_button {
+    border-radius: 25px;
+}
+
+#content_button {
+    
+   font-family: joyStix;
+
+   color: #1C1C1C;
+    
+    margin-top: 1em;
+
+    margin-bottom: 1em;
+    
+    font-size: 1em;
+    /*width: calc(50% + 2px);*/
+    
+    width: 70%;
+    height: 70px;
+    
+
+
+    
+
+
+
+    
+    
+    background: url("images/buttons/ciku_button.png") no-repeat; 
+    
+    background-size: 100%;
+    
+    outline: none;
+    border: none;
+
+}
+
+#preview_model {
+    
+
+    
+
+
+    
+
+   
+
+    height: 100% !important;
+    width: 100% !important;
+
+    /*position: absolute;
+
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    
+    margin: auto;
+
+ 
+
+
+}
+
+
+
+
+
+
+
+#content_image,#mcq_border {
+
+    position: relative;
+
+    border-radius: 10px;
+    height: 250px;
+    width: 90%;
+    
+    margin: auto;
+
+    background: #000865;
+
+
+
+}
+
+#content_div{
+    margin-top: -40px;
+}
+
+.hightlight{
+    color: #F0AC00;
+    font-weight: 500;
+}
+
+.hide {
+    display: none !important;
+}
+
+#audio-player1 {
+    margin-right: 1em;
+}
+
+
+#content_description {
+    
+
+ 
+    display: block;
+    font-size: 16px;
+ 
+    
+    width: 100%;
+    
+    margin: auto;
+    margin-top: 3.5em;
+
+    
+    /*text-align: left !important;*/
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    
+
+}
+
+.w-100 {
+    height: 400px;
+    width: 300px !important;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    
+    
+}
+
+.carousel-control-next-icon {
+    background-image: url("main_menu/next_arrow.svg");
+   
+    margin-left: 1em;
+    
+    
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("main_menu/previous_arrow.svg");
+    
+    margin-right: 1em;
+}
+
+.carousel-indicators{
+    opacity: 0;
+}
+
+.carousel-indicators .active {
+    
+    background-color: #00B577;
+}
+
+
+#carousel_slider {
+
+    display: flex;
+
+    margin-left: 0em;
+    
+    max-width: 100% !important;
+    
+    
+   
+ 
+}
+
+.carousel_images_inactive {
+    
+    opacity: 0.5;
+}
+
+.carousel_images {
+    
+    width: 70%;
+ 
+    
+    margin-left: 1em;
+
+    
+    
+}
+
+@font-face {
+    font-family: joyStix;
+    src: url(./font/joystix_monospace.ttf);
+  }
+
+  b{
+    font-family: joyStix !important;
+    font-weight: 100;
+    color: #F0AC00;
+    word-spacing: -0.5em;
+  }
+
+#content_title, #content_title1 {
+    
+    display: block;
+
+    margin-top: 0em;
+
+    margin: 0.5em auto;
+
+    line-height:1.2em;
+
+    font-size: 2.5em;
+
+    width: 70%;
+    
+
+}
+
+
+#close_button_image_modal {
+    
+  
+ 
+}
+
+
+
+
+#start-div {
+
+
+ 
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+
+    z-index: 1000;
+
+
+    background-color: rgb(0, 0, 0);
+
+    color: white;
+
+    width: 100%;
+    height: 100%;
+
+
+    outline: none;
+
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+
+
+
+}
+
+#overlay-div {
+
+
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+
+    z-index: 5;
+
+
+    background-color: rgb(255, 255, 255);
+    color: white;
+
+    width: 80%;
+    height: 50%;
+
+    border-radius: 20px;
+
+
+    outline: none;
+
+    text-align: center;
+
+
+}
+/*ipad*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+    #content_button {
+        height: 200px;
+    }
+}

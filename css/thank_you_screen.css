@@ -1,0 +1,185 @@
+﻿#share_message {
+    
+    display: block;
+    
+    
+}
+
+.navbar2 {
+    text-align: center;
+    padding-top: 1em;
+    
+    margin-bottom: 50px;
+}
+
+#navbar_logo2 {
+    margin: auto;
+    
+
+}
+
+#navigate_camera{
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
+    z-index: 10;
+    visibility: initial;
+}
+
+
+#results_title {
+    font-family: joyStix;
+    color: #F0AC00;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 80%;
+}
+
+#play_again_button {
+    width: 80%;
+    
+
+    font-weight: 450;
+    
+    padding-bottom: 0.5em;
+    background-color: #FFA400;
+    
+    border: #FFA400;
+    outline: none;
+    
+    margin-top: 0.5em;
+  
+}
+
+
+
+#results_picture {
+    
+    display: block;
+ 
+    width: 200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+}
+
+#resultImage {
+    width: 35%;
+
+    margin-top: -10px;
+
+}
+
+#background_frame {
+    
+    display: inline-block;
+    
+    width: 90%;
+    height: 350px;
+    background: url("games/background_black.svg") ;
+    background-color: #3E3E3E;
+    
+    
+
+    
+
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+    border-radius: 100px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 5px;
+}
+
+
+button {
+    padding-bottom: 0.5em;
+    margin: auto;
+}
+
+#content{
+    z-index: 10;
+}
+
+#content_description1, #content_description2 {
+    text-align: center;
+
+    display: block;
+    font-size: 1em;
+    width: 80%;
+
+    margin: auto;
+
+}
+
+#content_description2{
+    font-size: 0.7em;
+    margin-top: 4px;
+}
+
+#visit_button, #back_button {
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    background: url("./images/buttons/ciku_button.png") no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    border: none;
+    border-radius: 0%;
+    font-family: joyStix;
+    outline: none;
+    height: 70px;
+    width: 70%;
+
+    z-index: 10;
+    
+}
+
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+#back_button {
+    /*margin-top: 2em;
+
+    font-size: 1em;
+    width: calc(50% + 2px);
+
+
+    position: absolute;
+    bottom: 0;*/
+
+    /*left: 50%;*/ /* position the left edge of the element at the middle of the parent */
+
+    /*transform: translate(-50%, -50%);*/ /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+    float:right;
+    
+}
+
+#share_icon {
+    
+ 
+    float:left;
+}
+
+#footer_results {
+    
+    margin-top: 50px;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#image{
+    width: 100%;
+}
+
+.end{
+    height: 238px !important;
+}

@@ -1,0 +1,157 @@
+﻿span {
+    
+    text-align: center;
+}
+
+
+div[id='Falling Genes'], #MCQ {
+    background: url("games/background.svg");
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#chiku_instructions {
+    
+    text-align: center;
+
+
+    
+}
+
+#chiku_instructions_span {
+    font-size: 1.2em;
+
+    color: #F0AC00;
+
+    font-family: joyStix;
+  
+}
+
+
+#score_rect {
+
+    text-align: center;
+    width: 50px;
+    height: 20px;
+
+    margin: auto;
+    
+}
+
+.timer_rect {
+    
+    margin: auto;
+
+    margin-top: 1em;
+    background: url("games/falling_gene/clock.png") no-repeat center;
+
+    background-size: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+
+#score b{
+    color: white !important;
+    text-align: center;
+ 
+}
+
+.timer {
+    
+    font-weight: 450;
+
+
+    font-size: 24px;
+
+}
+
+.gene_box {
+    
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: url("games/falling_gene/mushroom.png") no-repeat;
+    background-size: 100%;
+    
+    z-index: 100;
+}
+
+.correct_gene_box {
+    background: url("./games/falling_gene/flower1.png") no-repeat;
+    background-size: 100%;
+}
+
+.correct_gene_box2 {
+    background: url("./games/falling_gene/flower2.png") no-repeat;
+    background-size: 100%;
+}
+
+.health{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2px;
+    margin-top: -20px;
+}
+
+#close_button_image_modal, .health{
+    width: 80px;
+}
+
+.heart{
+    width: 25px;
+    height: 25px;
+    border: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("./games/falling_gene/heart.png");
+}
+
+.scoreBottom {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+.progress{
+    height: 30px;
+    margin: auto;
+    width: 70%;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.bar{
+    position: absolute;
+    background: url(./games/falling_gene/progressBar.png) no-repeat 100% 100%;
+    background-size: contain;
+    z-index: 10;
+    width: 100%;
+	height: 100%;
+}
+
+.progress__fill{
+    width: 0%;
+	height: 100%;
+    margin-top: 4px;
+    margin-left: 4px;
+	background-color: #F0AC00;
+}
+
