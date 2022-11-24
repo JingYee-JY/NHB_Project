@@ -67,7 +67,7 @@ function nextQuestion()
     //questionCountUI.textContent = currentQuestionCount + "/" + startQuestionCount;
     console.log(currentQuestion)
     
-    questions.splice(randomIndex, 1);
+    //questions.splice(randomIndex, 1);
     
     console.log(questions)
     

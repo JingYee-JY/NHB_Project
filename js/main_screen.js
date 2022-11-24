@@ -141,7 +141,8 @@ function initFlowers()
 
         "A"
 
-        ),], `The National Monument testifies to the Chinese pioneers’ spirit of mutual assistance and their generosity towards the poor and needy. Apart from being a medical facility, the building also housed various Chinese guilds and served as the HQ of the Singapore Chinese Chamber of Commerce when it was first established. Read more on <span class="hightlight">Roots.sg</span>`,
+        )], 
+        `The National Monument testifies to the Chinese pioneers’ spirit of mutual assistance and their generosity towards the poor and needy. Apart from being a medical facility, the building also housed various Chinese guilds and served as the HQ of the Singapore Chinese Chamber of Commerce when it was first established. Read more on <span class="hightlight">Roots.sg</span>`,
         './models/chiku/Chiku.fbx', 15, 0.5,
             "sounds/chiku.mp3", mcq, [1], 
             ["./css/main_menu/carousel/chiku/1.png",
@@ -156,7 +157,7 @@ function initFlowers()
 
                 "A"
 
-                ),], 
+                )], 
                 `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <span class="hightlight">Roots.sg</span>`,
                 './models/durian/Durian.fbx', 8, 0.5,
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", mcq, [4, 5],

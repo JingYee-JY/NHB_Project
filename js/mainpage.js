@@ -4,6 +4,8 @@ import { FBXLoader } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/lo
 import {onLoadSplash} from "../js/splash_screen.js";
 
 var interval = undefined;
+var width;
+var height;
 
 export function App(modelPath, scale, alphaMapArray, location) {
 
@@ -11,10 +13,25 @@ export function App(modelPath, scale, alphaMapArray, location) {
   console.log(scale)
   const scene = new THREE.Scene()
 
+  var contentImage;
+  
+  if(location == true){
+    contentImage = document.getElementById("content_image");
+    width = document.getElementById("content_image").clientWidth;
+    height = document.getElementById("content_image").clientHeight;
+  }
+  else{
+    contentImage = document.getElementById("mcq_border");
+  }
+  console.log(width, height)
+  //const camera = new THREE.PerspectiveCamera(
+  //    50, document.getElementById("content_image").clientWidth / 
+  //    document.getElementById("content_image").clientHeight, 1, 10000
+  //);
   const camera = new THREE.PerspectiveCamera(
-      50, document.getElementById("content_image").clientWidth / 
-      document.getElementById("content_image").clientHeight, 1, 10000
-  );
+    50, width / 
+    height, 1, 10000
+);
   camera.position.z = 96
 
 
@@ -33,15 +50,6 @@ export function App(modelPath, scale, alphaMapArray, location) {
   if(document.getElementById("preview_model"))
   {
     document.getElementById("preview_model").remove();
-  }
-  
-  var contentImage;
-
-  if(location == true){
-    contentImage = document.getElementById("content_image");
-  }
-  else{
-    contentImage = document.getElementById("mcq_border");
   }
 
   contentImage.appendChild(renderer.domElement);
