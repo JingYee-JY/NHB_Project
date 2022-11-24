@@ -4,7 +4,7 @@
 
 .splash_screen_loaded {
 
-    background: url("splash_screen/background.svg") !important;
+    background: url("splash_screen/background.svg")  no-repeat !important;
 }
 
 #splash_screen {
@@ -25,13 +25,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url("main_menu/background.svg");
+    background: url("main_menu/background.svg") no-repeat;
 }
 
 #selection_screen{
-    background: url("selection/background.svg");
+    background: url("selection/background.svg") no-repeat;
 }
 
 #main_screen{
-    background: url("main_menu/background.svg");
+    background: url("main_menu/background.svg") no-repeat;
 }
