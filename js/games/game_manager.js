@@ -96,6 +96,8 @@ export function initGame(object,timerBoolean, clearGame, gameName, startTime, ..
 
 export function nextGame(object, gameName, clearGame,timerVariable, ...timerVariables){
 
+    window.scrollTo(0, 0);
+    
     gameStarted = false;
 
     clearAllTimers(timerVariable, timerVariables)

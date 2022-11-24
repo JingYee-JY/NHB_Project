@@ -484,6 +484,7 @@ export function onGameInfoLoad()
 
         if(flowerInformation.game.name.includes("Falling Genes"))
         {
+            window.scrollTo(0, 0);
             document.body.style.overflowY = "hidden";
             document.documentElement.style.overflowY = "hidden"; 
             FallingGenes.startGame();
