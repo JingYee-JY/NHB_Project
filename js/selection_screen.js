@@ -34,10 +34,15 @@ export function onLoad()
 
     let loadingScreen = document.getElementById("selection_screen");
     let mainScreen = document.getElementById("main_screen");
+        
         loadingScreen.classList.add("fade");
         loadingScreen.classList.remove("starting")
         loadingScreen.classList.remove("visible")
 
+        if(mainScreen.classList.contains("starting")){
+            mainScreen.classList.remove("starting")
+            mainScreen.classList.remove("visible")
+        }
         mainScreen.classList.add("starting")
         mainScreen.classList.remove("hide");
         

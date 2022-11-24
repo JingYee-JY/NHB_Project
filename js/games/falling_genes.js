@@ -250,7 +250,7 @@ function onCatchGene(gene, element)
         if(score == MAX_GENES )
         {
             console.log("ZERO")
-            GameManager.nextGame(Main.flowerInformation.name,"Falling Genes", removeAllGenes)
+            GameManager.nextGame(Main.flowerInformation.name,"Falling Genes", removeAllGenes, GameManager.timerVariable, gravityTimer)
         }
         
     }

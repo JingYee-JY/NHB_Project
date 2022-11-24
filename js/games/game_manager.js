@@ -53,7 +53,6 @@ export function initGame(object,timerBoolean, clearGame, gameName, startTime, ..
 
 
 
-
                 }
 
 

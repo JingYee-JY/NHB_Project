@@ -30,7 +30,7 @@ function initQuestions()
     questions = Main.flowerInformation.gameData;
     console.log(questions)
     gameEnded = false
-    
+
     startQuestionCount = questions.length;
     
     nextQuestion();
