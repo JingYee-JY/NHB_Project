@@ -112,10 +112,13 @@ function onConfirm()
         gameEnded = true
         return;
     }*/
+
+    document.body.style.overflowY = "hidden";
+    document.documentElement.style.overflowY = "hidden"; 
     
     if(selectedOptionElement.id === currentQuestion.answer)
     {
-        GameManager.setLose(false);
+        GameManager.setLose(false);    
         GameManager.end("MCQ",function() {})
         //console.log("end")
         //gameEnded = true
