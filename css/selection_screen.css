@@ -50,8 +50,6 @@
     text-align: center;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -125,16 +123,13 @@
 
 #deactive_button{
     background: url("images/buttons/deactived_button.png") no-repeat; 
-    background-size: 100%;
+    background-size: 100% 100%;
     color:white;
 }
 
 .buttons-div{
     flex-grow: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 80px;
 }
 
 
