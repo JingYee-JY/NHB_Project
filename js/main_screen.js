@@ -480,12 +480,12 @@ export function onGameInfoLoad()
 
         if(flowerInformation.game.name.includes("Falling Genes"))
         {
+            document.body.style.overflowY = "hidden";
+            document.documentElement.style.overflowY = "hidden"; 
             FallingGenes.startGame();
         }
         else if(flowerInformation.game.name.includes("Card Flip"))
-        {
-            document.body.style.overflowY = "hidden";
-            document.documentElement.style.overflowY = "hidden";    
+        {   
             CardFlip.startGame();
         }
         else if(flowerInformation.game.name.includes("MCQ"))

@@ -54,7 +54,7 @@ export function registerThankYouScreen(lose)
         resultsDescription.style.opacity = 1;
         againButton.style.display = "none";
         backButton.style.display = "";
-        resultBackground.style.background = `url("./css/images/win.png") no-repeat`
+        //resultBackground.style.background = `url("./css/images/win.png") no-repeat`
         resultBackground.style.backgroundSize = "100% 100%"
         resultImage.src = "./css/images/trophy.png"
         document.getElementById("navigate_camera").ontouchstart = Main.navigateToCamera;

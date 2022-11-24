@@ -164,7 +164,7 @@
 
 
 #question-div {
-    margin-top: 1em;
+    /*margin-top: 1em;*/
     
 }
 
@@ -279,4 +279,7 @@
 .info{
     margin-top: 10px;
     margin-bottom: 30px;
+}
+#mcq_border{
+    margin-top: 10px !important;
 }

@@ -37,14 +37,21 @@
     padding: 0px 20px 20px !important;
     z-index: 300;
     width: 100%;
-    height: 110px;
+    height: 80px;
+    margin-bottom: 10px;
 
+}
+
+#navbar_logo{
+    vertical-align: top !important;
 }
 
 #selection-div {
     text-align: center;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -86,8 +93,7 @@
    font-family: joyStix;
 
    color: #1C1C1C;
-    
-    margin-top: 1em;
+   margin: 0px auto;
     
     font-size: 0.9em;
     /*width: calc(50% + 2px);*/
@@ -112,10 +118,23 @@
 
 }
 
+#selection_button2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 #deactive_button{
     background: url("images/buttons/deactived_button.png") no-repeat; 
     background-size: 100%;
     color:white;
+}
+
+.buttons-div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
