@@ -288,11 +288,11 @@ export function initInformation()
 
 
         imageModal = document.getElementById("start-div");
-        document.getElementById("image_anchor").ontouchstart = openImageModal;
+        document.getElementById("image_anchor").pointerdown = openImageModal;
         
 
         
-        document.getElementById("close_button_image_modal").ontouchstart = function () {
+        document.getElementById("close_button_image_modal").pointerdown = function () {
             
             imageModal.classList.add("hide");
             document.body.style.overflowY = "scroll";
@@ -464,7 +464,7 @@ export function onGameInfoLoad()
 
     //const startButton = document.getElementById("content_button");
     
-    //startButton.ontouchstart = function () {
+    //startButton.pointerdown = function () {
         console.log("TEST")
 
         //document.getElementById("how_to_play").remove();

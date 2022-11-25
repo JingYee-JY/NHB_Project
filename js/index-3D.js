@@ -165,12 +165,12 @@ export function initCamera(modelPath, scale)
         cameraNavbar = document.getElementById("camera_navbar");
         previewNavbar = document.getElementById("preview_navbar");
 
-        sharePhotoUI.ontouchstart = savePhoto;
-        downloadPhotoUI.ontouchstart = downloadPhoto;
-        retakePhotoUI.ontouchstart = retakePhoto;
-        flipPhotoUI.ontouchstart = flipPhoto;
-        gobackUI.ontouchstart = goBack;
-        gobackUI1.ontouchstart = goBack;
+        sharePhotoUI.pointerdown = savePhoto;
+        downloadPhotoUI.pointerdown = downloadPhoto;
+        retakePhotoUI.pointerdown = retakePhoto;
+        flipPhotoUI.pointerdown = flipPhoto;
+        gobackUI.pointerdown = goBack;
+        gobackUI1.pointerdown = goBack;
         
         placementUI.addEventListener("click", () => {
 

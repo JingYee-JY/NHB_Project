@@ -67,7 +67,7 @@ export function initGame(object,timerBoolean, clearGame, gameName, startTime, ..
 
     /*const backButton = document.getElementById("back-button");
 
-    backButton.ontouchstart = function () {
+    backButton.pointerdown = function () {
 
         clearAllTimers(timerVariable, timerVariables)
 
@@ -98,7 +98,7 @@ export function nextGame(object, gameName, clearGame,timerVariable, ...timerVari
 
     window.scrollTo(0, 0);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    
+
     gameStarted = false;
 
     clearAllTimers(timerVariable, timerVariables)
@@ -116,6 +116,9 @@ export function nextGame(object, gameName, clearGame,timerVariable, ...timerVari
 
 export function end(gameName, clearGame,timerVariable, ...timerVariables){
 
+    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
     gameStarted = false;
 
     if(timerVariable != null){

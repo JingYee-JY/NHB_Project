@@ -57,7 +57,7 @@ export function registerThankYouScreen(lose)
         //resultBackground.style.background = `url("./css/images/win.png") no-repeat`
         resultBackground.style.backgroundSize = "100% 100%"
         resultImage.src = "./css/images/trophy.png"
-        document.getElementById("navigate_camera").ontouchstart = Main.navigateToCamera;
+        document.getElementById("navigate_camera").pointerdown = Main.navigateToCamera;
         camera.style.opacity = 1;
     }
     

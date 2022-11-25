@@ -199,7 +199,7 @@ export function startGame()
 
     /*const backButton = document.getElementById("back-button");
 
-    backButton.ontouchstart = function () {
+    backButton.pointerdown = function () {
 
         document.getElementById("Falling Genes").remove();
         CameraScreen.cameFromGame();
