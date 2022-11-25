@@ -7,6 +7,7 @@ var interval = undefined;
 var width;
 var height;
 var model;
+var rotation = false;
 
 export function App(modelPath, scale, alphaMapArray, location) {
 
@@ -188,8 +189,6 @@ export function App(modelPath, scale, alphaMapArray, location) {
   });
 
 
-  var rotation = false;
-
   const animate = () =>{
     //boxMesh.rotation.x += 0.01;
     //boxMesh.rotation.y += 0.01;
@@ -198,7 +197,6 @@ export function App(modelPath, scale, alphaMapArray, location) {
     window.requestAnimationFrame(animate)
     if(model)
     {
-      rotation = true;
       if(rotation)
       {
         if(model.rotation.y < 1.3)

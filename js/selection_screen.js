@@ -1,4 +1,5 @@
 ﻿import  * as Main from "./main_screen.js";
+import  * as MainPage from "./mainpage.js";
 
 const loadingScreen = document.getElementById("selection_screen");
 
@@ -66,7 +67,12 @@ export function onLoad()
             document.body.style.overflowY = "scroll";
             document.documentElement.style.overflowY = "scroll";            
        
-    
+            var delayInMilliseconds = 500;
+            setTimeout(function() {
+                //your code to be executed after 1 second
+                MainPage.allowModelRotation();
+            }, delayInMilliseconds);
+                
 
         }, delayInMilliseconds);
             
