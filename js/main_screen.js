@@ -301,6 +301,7 @@ export function initInformation()
         }
         document.addEventListener("touchmove", function(event){
             event.preventDefault();
+            
         });
         
     
@@ -408,7 +409,7 @@ export function initInformation()
   
         console.log(flower + " Flower")
 
-        document.getElementById("content_button").addEventListener("mousedown", function()
+        document.getElementById("content_button").addEventListener("pointerdown", function()
         {
             
             /*var html1 = 
