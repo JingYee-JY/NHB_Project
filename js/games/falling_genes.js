@@ -43,6 +43,7 @@ export function startGame()
     gameStarted = once = true;
     score = 0;
     lives = 3;
+    GameManager.setLives(lives)
 
 
     existingGenes = [];

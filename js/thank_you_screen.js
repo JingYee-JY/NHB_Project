@@ -61,7 +61,7 @@ export function registerThankYouScreen(lose)
         resultImage.src = "./css/images/trophy.png"
         document.getElementById("navigate_camera").pointerdown = Main.navigateToCamera;
         camera.style.opacity = 1;
-        resultBackground.style.marginTop = "80px"
+        resultBackground.style.marginTop = "55px"
         resultBackground.style.marginBottom = "-70px"
     }
     
