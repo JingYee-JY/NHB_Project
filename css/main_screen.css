@@ -21,6 +21,8 @@
 
 #hide_camera,#audio-player, #img_canvas_icon{
     visibility: hidden;
+    width: 60px;
+    height: 60px;
 }
 
 #threeD_canvas_icon {
@@ -110,8 +112,8 @@
 
    color: #1C1C1C;
     
-   margin-top: 1.5em;
-   margin-bottom: 1.5em;
+   margin-top: 1.7em;
+   margin-bottom: 1.7em;
     
     font-size: 1em;
     /*width: calc(50% + 2px);*/

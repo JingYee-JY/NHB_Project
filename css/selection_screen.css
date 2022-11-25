@@ -21,9 +21,6 @@
     opacity: 0;
 }
 
-#navigate_camera,#audio-player, #img_canvas_icon{
-    visibility: hidden;
-}
 
 .visible {
     visibility: visible;

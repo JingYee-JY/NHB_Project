@@ -6,6 +6,7 @@ import {onLoadSplash} from "../js/splash_screen.js";
 var interval = undefined;
 var width;
 var height;
+var model;
 
 export function App(modelPath, scale, alphaMapArray, location) {
 
@@ -77,6 +78,7 @@ export function App(modelPath, scale, alphaMapArray, location) {
     fbx.position.x = 0;
 
 
+    model = fbx
     //onLoadSplash();
 
 
@@ -186,18 +188,39 @@ export function App(modelPath, scale, alphaMapArray, location) {
   });
 
 
+  var rotation = false;
+
   const animate = () =>{
     //boxMesh.rotation.x += 0.01;
     //boxMesh.rotation.y += 0.01;
-
     controls.update();
     renderer.render(scene, camera);
     window.requestAnimationFrame(animate)
+    if(model)
+    {
+      rotation = true;
+      if(rotation)
+      {
+        if(model.rotation.y < 1.3)
+        {
+          model.rotation.y += 0.01;
+        }
+        else
+        {
+          model = undefined;
+        }
+      }
+    }
   }
   animate()
 
 
 
+}
+
+export function allowModelRotation()
+{
+    rotation = true;
 }
 
 
