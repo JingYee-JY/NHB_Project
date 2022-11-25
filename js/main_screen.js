@@ -136,7 +136,7 @@ function initFlowers()
                 "./css/main_menu/carousel/jambu/5.png"],
             "./css/plants/jambu.png"),
 
-            "OTC BUILDING1" :new Flower("OTC BUILDING", [new Question("How many <br> courtyards does <br> the building have?", 
+            "OTC BUILDING1" :new Flower("OTC BUILDING", [new Question("How many<br>courtyards does<br>the building have?", 
         {"A" : "A) 2",
             "B" : "B) 3",
             "C" : "C) 4"},
@@ -152,7 +152,7 @@ function initFlowers()
                 "./css/main_menu/carousel/chiku/3.png"],
             "./css/plants/otcBuilding.png"),
 
-        "PULUT TAI TAI1" : new Flower("PULUT TAI TAI",[new Question("Which ingredient is <br> NOT needed to make <br> Pulut Tai Tai?", 
+        "PULUT TAI TAI1" : new Flower("PULUT TAI TAI",[new Question("Which ingredient is<br>NOT needed to make<br>Pulut Tai Tai?", 
                 {"A" : "A) Glutinous rice",
                     "B" : "b) Coconut milk",
                     "C" : "C) Gula melaka"},
@@ -175,8 +175,6 @@ function initFlowers()
 export function start(){
     console.log(flowerInformation,"test")
 
-    document.getElementById("threeD_canvas_icon2").style.opacity = 1;
-    document.getElementById("threeD_canvas_icon2").style.animation = "flashing 3s infinite"
     if(!infoInit) 
     {
         initGames();
@@ -434,7 +432,9 @@ export function initInformation()
         });
 
 
-   
+        document.getElementById("threeD_canvas_icon2").style.opacity = 1;
+        document.getElementById("threeD_canvas_icon").style.opacity = 1;
+        document.getElementById("threeD_canvas_icon2").style.animation = "1s ease 2s 1 normal none running flashing"
 
         infoInit = true;
     }

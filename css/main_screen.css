@@ -26,7 +26,6 @@
 #threeD_canvas_icon {
     position: absolute;
     
-  display: none;
 
    
 
@@ -40,7 +39,13 @@
     0%{
         opacity: 100%;
     }
+    25%{
+        opacity: 0%;
+    }
     50%{
+        opacity: 100%;
+    }
+    75%{
         opacity: 0%;
     }
     100%{
@@ -59,7 +64,7 @@
   
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: flashing 3s infinite;
+    /*animation: flashing 1s;*/
 }
 
 #img_canvas_icon {
@@ -184,7 +189,7 @@
 
 .hightlight{
     color: #F0AC00;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 a:hover{

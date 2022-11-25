@@ -86,7 +86,7 @@ export function App(modelPath, scale, alphaMapArray, location) {
     const loader = new THREE.ImageLoader();
 
     var previewModel = document.getElementById("preview_model");
-    //var threeDimensionIndicator = document.getElementById("threeD_canvas_icon");
+    var threeDimensionIndicator = document.getElementById("threeD_canvas_icon");
     var threeDimensionIndicator2 = document.getElementById("threeD_canvas_icon2");
     
  
@@ -102,7 +102,7 @@ export function App(modelPath, scale, alphaMapArray, location) {
           
           if(threeDimensionIndicator2.style.opacity >= 0)
           {
-            //threeDimensionIndicator.style.opacity-= 0.1;
+            threeDimensionIndicator.style.opacity-= 0.1;
             threeDimensionIndicator2.style.opacity -= 0.1;
             threeDimensionIndicator2.style.animation = "paused"
           }

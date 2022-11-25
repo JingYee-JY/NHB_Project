@@ -92,12 +92,12 @@ export function startGame()
                     onCatchGene(randomGene, geneHTML);
                 })
 
-                document.body.append(geneHTML);
+                document.getElementById("Falling Genes").append(geneHTML);
 
 
 
                 var geneObject = new GeneObject(randomGene, geneHTML,
-                    Math.random() * (5 - 2) + 1)
+                    Math.random() * (4 - 2) + 1)
 
                 existingGenes.push(geneObject);
 
