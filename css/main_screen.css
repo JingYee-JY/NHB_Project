@@ -28,7 +28,7 @@
 #threeD_canvas_icon {
     position: absolute;
     
-
+    pointer-events: none;
    
 
     bottom: 1%;
@@ -58,7 +58,7 @@
 #threeD_canvas_icon2 {
     position: absolute;
     
-  
+    pointer-events: none;
 
     width: 97%;
 
