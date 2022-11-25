@@ -46,6 +46,8 @@ export function registerThankYouScreen(lose)
         resultBackground.style.background = ""
         resultImage.src = "./css/images/losehearts.png"
         camera.style.opacity = 0;
+        resultBackground.style.marginTop = "30px"
+        resultBackground.style.marginBottom = "-20px"
     }
     else
     {
@@ -59,6 +61,8 @@ export function registerThankYouScreen(lose)
         resultImage.src = "./css/images/trophy.png"
         document.getElementById("navigate_camera").pointerdown = Main.navigateToCamera;
         camera.style.opacity = 1;
+        resultBackground.style.marginTop = "80px"
+        resultBackground.style.marginBottom = "-70px"
     }
     
     againButton.onmousedown = function () {

@@ -435,7 +435,6 @@ export function initInformation()
 
         document.getElementById("threeD_canvas_icon2").style.opacity = 1;
         document.getElementById("threeD_canvas_icon").style.opacity = 1;
-        document.getElementById("threeD_canvas_icon2").style.animation = "1s ease 2s 1 normal none running flashing"
 
         infoInit = true;
     }

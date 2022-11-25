@@ -24,7 +24,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url("main_menu/background.svg") no-repeat;
+    background: url("results/background.svg") no-repeat;
+    background-size: 100%;
 }
 
 #selection_screen{
