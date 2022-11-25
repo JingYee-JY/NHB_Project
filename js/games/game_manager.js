@@ -132,6 +132,7 @@ export function end(gameName, clearGame,timerVariable, ...timerVariables){
 
     document.getElementById("thank_you_screen").classList.remove("hide");
 
+    console.log(lose)
     ThankYouScreen.registerThankYouScreen(lose);
 }
 

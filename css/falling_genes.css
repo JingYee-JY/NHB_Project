@@ -92,7 +92,7 @@ div[id='Falling Genes'], #MCQ {
     background: url("games/falling_gene/mushroom.png") no-repeat;
     background-size: 100%;
     
-    z-index: 0;
+    z-index: 100;
 }
 
 .correct_gene_box {

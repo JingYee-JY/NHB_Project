@@ -130,6 +130,7 @@ function onConfirm()
 
     if(selectedOptionElement.id != currentQuestion.answer)
     {
+        GameManager.setLose(true); 
         if(GameManager.lives > 1){
             GameManager.setLose(false);
         }

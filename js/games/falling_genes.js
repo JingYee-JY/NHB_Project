@@ -263,6 +263,7 @@ function onCatchGene(gene, element)
         heart.classList.add("empty")
         heart.classList.remove("heart")
         if(GameManager.lives == 0){
+            GameManager.setLose(true); 
             GameManager.end("Falling Genes", removeAllGenes, GameManager.timerVariable, gravityTimer)
         }
 
