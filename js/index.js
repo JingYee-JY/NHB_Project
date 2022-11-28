@@ -429,7 +429,7 @@ function takeScreenshot()
             console.log(renderer.domElement.offsetHeight - 110)
 
             //console.log(canvas.offsetHeight)
-            ctx.drawImage(image3, parseInt(ctx.canvas.style.width.replace("px", "")) /2.1, 0 + 10
+            ctx.drawImage(image3, parseInt(ctx.canvas.style.width.replace("px", "")) /2.05, 0 + 10
 
                 , window.innerWidth/3.7,
                 window.innerHeight / 11);
