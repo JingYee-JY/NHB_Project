@@ -103,7 +103,7 @@ function initFlowers()
             ["./css/main_menu/carousel/chiku/1.png",
                 "./css/main_menu/carousel/chiku/2.png",
                 "./css/main_menu/carousel/chiku/3.png"],
-            "./css/plants/jambu.png"),
+            "./css/plants/pulutTauTai.png"),
 
             "FORMER THONG CHAI MEDICAL INSTITUTION1" :new Flower("FORMER THONG CHAI MEDICAL INSTITUTION","FORMER THONG<br>" + "CHAI MEDICAL<br>" + "INSTITUTION", [new Question("How many<br>courtyards does<br>the building have?", 
         {"A" : "A) 2",
@@ -137,7 +137,7 @@ function initFlowers()
                 "./css/main_menu/carousel/jambu/3.png",
                 "./css/main_menu/carousel/jambu/4.png",
                 "./css/main_menu/carousel/jambu/5.png"],
-                "./css/plants/jambu.png")
+                "./css/plants/pulutTauTai.png")
     }
 }
 
