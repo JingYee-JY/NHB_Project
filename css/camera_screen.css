@@ -125,9 +125,6 @@ body {
     /*background-color: #2A2A2A;*/
     
     width: 100%;
-    position: absolute;
-   
-    bottom: 0%;
 
 }
 
@@ -161,6 +158,16 @@ body {
 
     
 }
+#camera-border{
+
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
+    
+    background-color: transparent;
+    
+}
 
 #preview {
     background: #2A2A2A;
@@ -190,6 +197,10 @@ body {
 .starting {
     visibility: hidden;
     opacity: 0;
+}
+
+.bottomImage{
+    width: 100%;
 }
 
 @media screen and (orientation: landscape) {
