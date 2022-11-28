@@ -119,7 +119,8 @@ export function nextGame(object, gameName, clearGame,timerVariable, ...timerVari
 
 export function end(gameName, clearGame,timerVariable, ...timerVariables){
 
-    window.scrollTo(0, 0);
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and 
     //window.scrollTo({ top: 0, behavior: 'smooth' });
     
     
@@ -133,11 +134,9 @@ export function end(gameName, clearGame,timerVariable, ...timerVariables){
 
     document.getElementById(gameName).remove();
 
-    setTimeout(function () {
-        document.getElementById("thank_you_screen").classList.remove("hide");
-        console.log(lose)
-        ThankYouScreen.registerThankYouScreen(lose);
-    }, 500);
+    document.getElementById("thank_you_screen").classList.remove("hide");
+    console.log(lose)
+    ThankYouScreen.registerThankYouScreen(lose);
 }
 
 

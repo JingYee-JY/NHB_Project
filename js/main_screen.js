@@ -453,13 +453,13 @@ export function onGameInfoLoad()
         if(flowerInformation.game.name.includes("Falling Genes"))
         {
             //window.scrollTop(0);
-            window.scrollTo(0, 0);
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and 
             //window.scrollTo({ top: 0, behavior: 'smooth' });
-            setTimeout(function () {
-                document.body.style.overflowY = "hidden";
-                document.documentElement.style.overflowY = "hidden";
-                FallingGenes.startGame();
-            }, 500);
+            
+            document.body.style.overflowY = "hidden";
+            document.documentElement.style.overflowY = "hidden";
+            FallingGenes.startGame();
         }
         else if(flowerInformation.game.name.includes("Card Flip"))
         {   
