@@ -431,8 +431,8 @@ function takeScreenshot()
             //console.log(canvas.offsetHeight)
             ctx.drawImage(image3, parseInt(ctx.canvas.style.width.replace("px", "")) /2, 0 + 10
 
-                , window.innerWidth/4,
-                window.innerHeight / 10.5);
+                , window.innerWidth/3.5,
+                window.innerHeight / 11);
             // Convert canvas data to url
 
 
