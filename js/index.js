@@ -318,6 +318,9 @@ function takeScreenshot()
         
         var image2 = new Image();
         image2.src = './css/camera/cameraBottom.svg';
+
+        var image3 = new Image();
+        image3.src = './css/main_menu/logo.svg';
     
 
         image2.onload = function ()
@@ -344,10 +347,92 @@ function takeScreenshot()
             console.log(renderer.domElement.offsetHeight - 110)
 
             //console.log(canvas.offsetHeight)
-            ctx.drawImage(image2, 0, parseInt(ctx.canvas.style.height.replace("px", "")) + 20
-
+            ctx.drawImage(image2, 0, parseInt(ctx.canvas.style.height.replace("px", "")) + 87
                 , window.innerWidth,
-                window.innerHeight / 5);
+                window.innerHeight / 10);
+            // Convert canvas data to url
+
+
+
+            url = myCanvas.toDataURL('image/jpeg', 0.8);
+
+            document.getElementById("camera-border").classList.add("no-show");
+            var preview = document.getElementById("preview");
+
+            preview.classList.remove("no-show");
+
+
+            var canvasPreview = document.getElementById("canvas_preview");
+
+            var existingCanvas = canvasPreview.querySelector("canvas");
+
+            if(existingCanvas)
+                existingCanvas.remove()
+
+
+            myCanvas.id = "camera_preview_2";
+            objectHint.classList.add("hide0");
+            flashIcon.classList.add("hideO");
+            cameraNavbar.classList.add("hide");
+            previewNavbar.classList.remove("hide");
+            
+            canvas.classList.add("hide");
+
+            canvasPreview.append(myCanvas)
+
+            myCanvas.style.height =
+                (myCanvas.height / 1.5) + "px";
+
+            myCanvas.style.width =
+                (myCanvas.width / 1.5) + "px";
+            
+            
+            console.log((myCanvas.style.height.replace("px", "") / 1.2) + "px" )
+        
+            
+            
+            
+            
+
+        
+            
+            
+            
+            
+            // Take snapshot
+            /*ZapparSharing({
+                data: url,
+            });*/
+        }
+
+        image3.onload = function ()
+        {
+
+            //ar image3 = new Image();
+            //image3.src = document.getElementById("image_canvas").toDataURL('image/jpeg', 100);
+            
+         
+            
+            //ctx.drawImage(image3, 0, 0)
+            
+            
+            console.log(renderer.domElement.offsetHeight)
+
+            console.log(canvas.offsetHeight)
+            myCanvas.style.height =
+                (myCanvas.height / 1.3) + "px";
+
+            myCanvas.style.width =
+                (myCanvas.width / 1.3) + "px";
+
+            console.log(myCanvas.style.height  + " WIEHEDTH")
+            console.log(renderer.domElement.offsetHeight - 110)
+
+            //console.log(canvas.offsetHeight)
+            ctx.drawImage(image3, parseInt(ctx.canvas.style.width.replace("px", "")) /2.3, 0 + 10
+
+                , window.innerWidth/2.95,
+                window.innerHeight / 9.3);
             // Convert canvas data to url
 
 
