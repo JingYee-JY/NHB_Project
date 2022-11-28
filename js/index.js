@@ -127,7 +127,7 @@ export function initCamera(spritePath)
         listeners = true;
         objectHint = document.getElementById("object_hint");
         flashIcon = document.getElementById("flash_camera");
-        cameraNavbar = document.getElementById("camera_icons_navbar");
+        cameraNavbar = document.querySelector(".camera_icons_navbar");
         previewNavbar = document.getElementById("preview_navbar");
         
         const sharePhotoUI = document.getElementById("share-photo");
@@ -138,7 +138,7 @@ export function initCamera(spritePath)
         const gobackUI1 = document.getElementById("go-back1");
         objectHint = document.getElementById("object_hint");
         flashIcon = document.getElementById("flash_camera");
-        cameraNavbar = document.getElementById("camera_navbar");
+        cameraNavbar = document.querySelector(".camera_icons_navbar");
         previewNavbar = document.getElementById("preview_navbar");
 
         sharePhotoUI.ontouchstart = savePhoto;
