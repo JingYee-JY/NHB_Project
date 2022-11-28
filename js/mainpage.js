@@ -197,9 +197,9 @@ export function App(modelPath, scale, alphaMapArray, location) {
     {
       if(rotation)
       {
-        if(model.rotation.y < 1.3)
+        if(model.rotation.y > -1.3)
         {
-          model.rotation.y += 0.01;
+          model.rotation.y -= 0.01;
         }
         else
         {

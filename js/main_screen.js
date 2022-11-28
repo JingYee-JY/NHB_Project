@@ -59,9 +59,11 @@ function initGames()
 
 export class Flower {
     
-    constructor(name, gameData, description, modelPath, scale, secondScale, audio, game, alphaMapArray, pictureGallery, 
+    constructor(name, title, gameData, description, modelPath, scale, secondScale, audio, game, alphaMapArray, pictureGallery, 
                 mainSpritePath) {
+        
         this.name = name;
+        this.title = title;
 
         this.gameData = gameData;
         this.description = description;
@@ -85,25 +87,25 @@ export var listOfFlowers;
 function initFlowers()
 {
     listOfFlowers = {
-        "FORMER THONG CHAI MEDICAL INSTITUTION" : new Flower("FORMER THONG CHAI MEDICAL INSTITUTION", ["A", "B", "C", "D", "E", "F"], 
+        "FORMER THONG CHAI MEDICAL INSTITUTION" : new Flower("FORMER THONG CHAI MEDICAL INSTITUTION","FORMER THONG<br>" + "CHAI MEDICAL<br>" + "INSTITUTION", ["A", "B", "C", "D", "E", "F"], 
         `The National Monument testifies to the Chinese pioneers’ spirit of mutual assistance and their generosity towards the poor and needy. Apart from being a medical facility, the building also housed various Chinese guilds and served as the HQ of the Singapore Chinese Chamber of Commerce when it was first established. Read more on <a href="https://www.roots.gov.sg/places/places-landing/Places/national-monuments/former-thong-chai-medical-institution" target="_blank" class="hightlight">Roots.sg`,
-            './models/otc/OTC_Optimized.fbx', 0.06, 0.1,
+            './models/otc/OTC_Optimized.fbx', 0.07, 0.1,
             "sounds/chiku.mp3", fallingGenes, [0], 
             ["./css/main_menu/carousel/chiku/1.png",
                 "./css/main_menu/carousel/chiku/2.png",
                 "./css/main_menu/carousel/chiku/3.png"],
             "./css/plants/otcBuilding.png"),
 
-        "PULUT TAI TAI" : new Flower("PULUT TAI TAI",["A", "B", "C", "D", "E", "F"], 
+        "PULUT TAI TAI" : new Flower("PULUT TAI TAI","PULUT<br>" + "TAI TAI",["A", "B", "C", "D", "E", "F"], 
         `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <a href="https://www.roots.gov.sg/ich-landing/ich/kueh" target="_blank" class="hightlight">Roots.sg`,
-            './models/pulut/PulutTaiTai.fbx', 0.06, 0.1,
+            './models/pulut/PulutTaiTai.fbx', 0.07, 0.1,
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", fallingGenes, [0],
             ["./css/main_menu/carousel/chiku/1.png",
                 "./css/main_menu/carousel/chiku/2.png",
                 "./css/main_menu/carousel/chiku/3.png"],
             "./css/plants/jambu.png"),
 
-            "FORMER THONG CHAI MEDICAL INSTITUTION1" :new Flower("FORMER THONG CHAI MEDICAL INSTITUTION", [new Question("How many<br>courtyards does<br>the building have?", 
+            "FORMER THONG CHAI MEDICAL INSTITUTION1" :new Flower("FORMER THONG CHAI MEDICAL INSTITUTION","FORMER THONG<br>" + "CHAI MEDICAL<br>" + "INSTITUTION", [new Question("How many<br>courtyards does<br>the building have?", 
         {"A" : "A) 2",
             "B" : "B) 3",
             "C" : "C) 4"},
@@ -112,14 +114,14 @@ function initFlowers()
 
         )], 
         `The National Monument testifies to the Chinese pioneers’ spirit of mutual assistance and their generosity towards the poor and needy. Apart from being a medical facility, the building also housed various Chinese guilds and served as the HQ of the Singapore Chinese Chamber of Commerce when it was first established. Read more on <span class="hightlight">Roots.sg</span>`,
-        './models/otc/OTC_Optimized.fbx', 0.06, 0.1,
+        './models/otc/OTC_Optimized.fbx', 0.07, 0.1,
             "sounds/chiku.mp3", mcq, [0], 
             ["./css/main_menu/carousel/chiku/1.png",
                 "./css/main_menu/carousel/chiku/2.png",
                 "./css/main_menu/carousel/chiku/3.png"],
             "./css/plants/otcBuilding.png"),
 
-        "PULUT TAI TAI1" : new Flower("PULUT TAI TAI",[new Question("Which ingredient is<br>NOT needed to make<br>Pulut Tai Tai?", 
+        "PULUT TAI TAI1" : new Flower("PULUT TAI TAI","PULUT<br>" + "TAI TAI",[new Question("Which ingredient is<br>NOT needed to make<br>Pulut Tai Tai?", 
                 {"A" : "A) Glutinous rice",
                     "B" : "b) Coconut milk",
                     "C" : "C) Gula melaka"},
@@ -128,7 +130,7 @@ function initFlowers()
 
                 )], 
                 `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <a href="https://www.roots.gov.sg/ich-landing/ich/kueh" target="_blank" class="hightlight">Roots.sg`,
-                './models/pulut/PulutTaiTai.fbx', 0.06, 0.1,
+                './models/pulut/PulutTaiTai.fbx', 0.07, 0.1,
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", mcq, [0],
             ["./css/main_menu/carousel/jambu/1.png",
                 "./css/main_menu/carousel/jambu/2.png",
@@ -306,8 +308,7 @@ export function initInformation()
         populateImageModal();
 
 
-        contentTitle.innerHTML = "<b>" + flowerType.substring(0, 1).toUpperCase() +
-            flowerType.substring(1)+ "</b>";
+        contentTitle.innerHTML = "<b>" + flowerInformation.title + "</b>";
 
 
         contentTitle1.innerHTML = "<b>" + flowerType.substring(0, 1).toUpperCase() +
