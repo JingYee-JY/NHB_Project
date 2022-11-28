@@ -98,7 +98,7 @@ function initFlowers()
 
         "PULUT TAI TAI" : new Flower("PULUT TAI TAI","PULUT<br>" + "TAI TAI",["A", "B", "C", "D", "E", "F"], 
         `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <a href="https://www.roots.gov.sg/ich-landing/ich/kueh" target="_blank" class="hightlight">Roots.sg`,
-            './models/pulut/PulutTaiTai.fbx', 0.07, 0.1,
+            './models/pulut/PulutTaiTai.fbx', 0.1, 0.7,
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", fallingGenes, [0],
             ["./css/main_menu/carousel/chiku/1.png",
                 "./css/main_menu/carousel/chiku/2.png",
@@ -130,7 +130,7 @@ function initFlowers()
 
                 )], 
                 `Kueh (or kuih in Malay) are types of snacks that have become a staple in Singaporean food culture. This Peranakan kueh, also a traditional Nyonya wedding specialty, is made of glutinous rice tinted blue by butterfly pea flowers. It is then steamed in coconut milk and is served together with kaya. Learn more on <a href="https://www.roots.gov.sg/ich-landing/ich/kueh" target="_blank" class="hightlight">Roots.sg`,
-                './models/pulut/PulutTaiTai.fbx', 0.07, 0.1,
+                './models/pulut/PulutTaiTai.fbx', 0.07, 0.5,
             "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", mcq, [0],
             ["./css/main_menu/carousel/jambu/1.png",
                 "./css/main_menu/carousel/jambu/2.png",
