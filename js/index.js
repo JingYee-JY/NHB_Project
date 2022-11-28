@@ -317,7 +317,7 @@ function takeScreenshot()
         
         
         var image2 = new Image();
-        image2.src = './css/branding/branding.svg';
+        image2.src = './css/camera/cameraBottom.svg';
     
 
         image2.onload = function ()
