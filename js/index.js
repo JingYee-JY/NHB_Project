@@ -127,7 +127,7 @@ export function initCamera(spritePath)
         listeners = true;
         objectHint = document.getElementById("object_hint");
         flashIcon = document.getElementById("flash_camera");
-        cameraNavbar = document.getElementById("camera_navbar");
+        cameraNavbar = document.getElementById("camera_icons_navbar");
         previewNavbar = document.getElementById("preview_navbar");
         
         const sharePhotoUI = document.getElementById("share-photo");
