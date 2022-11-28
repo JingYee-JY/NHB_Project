@@ -75,8 +75,8 @@ export function App(modelPath, scale, alphaMapArray, location) {
   const fbxLoader = new FBXLoader();
   
   fbxLoader.load(modelPath, (fbx)=> {
-    fbx.position.y = -20;
-    fbx.position.x = 0;
+    fbx.position.y = -6;
+    fbx.position.x = 5;
 
 
     model = fbx
