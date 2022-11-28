@@ -134,8 +134,6 @@ export function App(modelPath, scale, alphaMapArray, location) {
 
           child.material = new THREE.MeshLambertMaterial( {
 
-              alphaToCoverage: true,
-              transparent: true,
               map: oldMat.map,
               side: THREE.DoubleSide
               //etc

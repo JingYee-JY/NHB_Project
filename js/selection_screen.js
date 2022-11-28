@@ -13,7 +13,7 @@ button1.addEventListener("mousedown", function()
         {
 
             console.log("OTC")
-            localStorage.setItem("flower", "OTC BUILDING");
+            localStorage.setItem("flower", "FORMER THONG CHAI MEDICAL INSTITUTION");
 
             onLoad();
             
