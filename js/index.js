@@ -429,10 +429,10 @@ function takeScreenshot()
             console.log(renderer.domElement.offsetHeight - 110)
 
             //console.log(canvas.offsetHeight)
-            ctx.drawImage(image3, parseInt(ctx.canvas.style.width.replace("px", "")) /2.3, 0 + 10
+            ctx.drawImage(image3, parseInt(ctx.canvas.style.width.replace("px", "")) /2, 0 + 10
 
-                , window.innerWidth/2.95,
-                window.innerHeight / 9.3);
+                , window.innerWidth/4,
+                window.innerHeight / 10.5);
             // Convert canvas data to url
 
 
