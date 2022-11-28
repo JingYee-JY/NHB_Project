@@ -184,7 +184,7 @@ export function startGame()
     mcqOptions.forEach((value) => {
 
         
-        value.ontouchstart = function()
+        value.onmousedown = function()
         {
             selectedOptionElement = value;
             onConfirm();
