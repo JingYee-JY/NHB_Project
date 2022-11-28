@@ -133,11 +133,11 @@ export function end(gameName, clearGame,timerVariable, ...timerVariables){
 
     document.getElementById(gameName).remove();
 
-
-    document.getElementById("thank_you_screen").classList.remove("hide");
-
-    console.log(lose)
-    ThankYouScreen.registerThankYouScreen(lose);
+    setTimeout(function () {
+        document.getElementById("thank_you_screen").classList.remove("hide");
+        console.log(lose)
+        ThankYouScreen.registerThankYouScreen(lose);
+    }, 500);
 }
 
 
