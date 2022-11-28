@@ -39,7 +39,7 @@ export function onLoadSplash()
         splashScreen.classList.add("fade");
   
 
-        var delayInMilliseconds = 2000;
+        var delayInMilliseconds = 1400;
 
         setTimeout(function() {
             //your code to be executed after 1 second

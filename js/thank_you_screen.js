@@ -39,7 +39,7 @@ export function registerThankYouScreen(lose)
 
     if(lose)
     {
-        resultsTitle.textContent = "KEEP IT UP!"
+        resultsTitle.innerHTML = "KEEP <br> IT UP!"
         resultsDescription.style.opacity = 0;
         againButton.style.display = "";
         backButton.style.display = "none";
@@ -52,7 +52,7 @@ export function registerThankYouScreen(lose)
     if(!lose)
     {
 
-        resultsTitle.textContent = "YOU WIN!";
+        resultsTitle.innerHTML = "YOU WIN!";
         resultsDescription.style.opacity = 1;
         againButton.style.display = "none";
         backButton.style.display = "";
@@ -61,8 +61,8 @@ export function registerThankYouScreen(lose)
         resultImage.src = "./css/images/trophy.png"
         camera.onmousedown = Main.navigateToCamera;
         camera.style.opacity = 1;
-        resultBackground.style.marginTop = "55px"
-        resultBackground.style.marginBottom = "-70px"
+        resultBackground.style.marginTop = "45px"
+        resultBackground.style.marginBottom = "-85px"
     }
     
     againButton.onmousedown = function () {

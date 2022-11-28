@@ -143,5 +143,5 @@
 .fade {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
+    transition: visibility 0s 1.2s, opacity 1.2s linear;
 }
