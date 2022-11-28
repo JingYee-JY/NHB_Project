@@ -110,6 +110,8 @@ export function nextGame(object, gameName, clearGame,timerVariable, ...timerVari
     document.documentElement.style.overflowY = "scroll";            
 
     Main.setlowerInfo(Main.listOfFlowers[object + 1]);
+
+    console.log(Main.listOfFlowers[object + 1])
     Main.onGameInfoLoad();
 }
 

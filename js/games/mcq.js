@@ -163,7 +163,7 @@ export function startGame()
 
     }
 
-    MainPage.App(Main.flowerInformation.modelPath, Main.flowerInformation.scale, Main.flowerInformation.alphaMapArray, false);
+    MainPage.App(Main.flowerInformation.name,Main.flowerInformation.modelPath, Main.flowerInformation.scale, Main.flowerInformation.alphaMapArray, false);
 
     mcqOptions = document.querySelectorAll(".question-options");
     questionActualOptions = document.querySelectorAll(".question-actual-question");

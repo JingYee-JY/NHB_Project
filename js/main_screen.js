@@ -114,7 +114,7 @@ function initFlowers()
 
         )], 
         `The National Monument testifies to the Chinese pioneers’ spirit of mutual assistance and their generosity towards the poor and needy. Apart from being a medical facility, the building also housed various Chinese guilds and served as the HQ of the Singapore Chinese Chamber of Commerce when it was first established. Read more on <span class="hightlight">Roots.sg</span>`,
-        './models/otc/OTC_Optimized.gltf', 0.07, 0.1,
+        './models/otc/scene.gltf', 7, 9,
             "sounds/chiku.mp3", mcq, [0], 
             ["./css/main_menu/carousel/chiku/1.png",
                 "./css/main_menu/carousel/chiku/2.png",
