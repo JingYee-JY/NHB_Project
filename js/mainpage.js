@@ -75,6 +75,8 @@ export function App(name, modelPath, scale, alphaMapArray, location) {
 
   const fbxLoader = new FBXLoader();
   const gltfLoader = new GLTFLoader();
+
+  interval = undefined;
   if(name == "FORMER THONG CHAI MEDICAL INSTITUTION"){
     gltfLoader.load(modelPath, (gltfScene) =>{
       gltfScene.scene.position.y = -5;
