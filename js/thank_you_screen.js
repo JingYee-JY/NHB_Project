@@ -67,6 +67,10 @@ export function registerThankYouScreen(lose)
     
     againButton.onmousedown = function () {
 
+        //window.scrollTop(0);
+        window.scrollTo(0, 0);
+        //window.scrollTo({ top: 0, behavior: 'smooth' });
+
         document.getElementById("thank_you_screen").classList.add("hide");
         Main.setlowerInfo(Main.listOfFlowers[Main.flowerInformation.name])
         Main.onGameInfoLoad();
@@ -75,16 +79,16 @@ export function registerThankYouScreen(lose)
     backButton.onmousedown = function()
     {
       
+        //window.scrollTop(0);
+        window.scrollTo(0, 0);
+        //window.scrollTo({ top: 0, behavior: 'smooth' });
+
         document.getElementById("thank_you_screen").classList.add("hide");
         document.getElementById("selection_screen").classList.remove("hide");
         document.getElementById("selection_screen").classList.remove("fade");
 
         document.getElementById("selection_button1").addEventListener("mousedown", function()
         {
-
-            window.scrollTo(0, 0);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
             console.log("OTC")
             localStorage.setItem("flower", "FORMER THONG CHAI MEDICAL INSTITUTION");
 
@@ -94,9 +98,7 @@ export function registerThankYouScreen(lose)
 
         document.getElementById("selection_button2").addEventListener("mousedown", function()
         {
-            window.scrollTo(0, 0);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            
+
             console.log("PULUT")
             localStorage.setItem("flower", "PULUT TAI TAI");
             

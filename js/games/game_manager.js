@@ -96,8 +96,9 @@ export function initGame(object,timerBoolean, clearGame, gameName, startTime, ..
 
 export function nextGame(object, gameName, clearGame,timerVariable, ...timerVariables){
 
+    //window.scrollTop(0);
     window.scrollTo(0, 0);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    //window.scrollTo({ top: 0, behavior: 'smooth' });
 
     gameStarted = false;
 
@@ -119,7 +120,7 @@ export function nextGame(object, gameName, clearGame,timerVariable, ...timerVari
 export function end(gameName, clearGame,timerVariable, ...timerVariables){
 
     window.scrollTo(0, 0);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    //window.scrollTo({ top: 0, behavior: 'smooth' });
     
     
     gameStarted = false;
