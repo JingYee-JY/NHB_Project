@@ -82,18 +82,21 @@ export function registerThankYouScreen(lose)
         document.getElementById("selection_button1").addEventListener("mousedown", function()
         {
 
+            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
             console.log("OTC")
             localStorage.setItem("flower", "FORMER THONG CHAI MEDICAL INSTITUTION");
 
             Selection.onLoad();
-
-            window.scrollTo(0, 0);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
             
         });
 
         document.getElementById("selection_button2").addEventListener("mousedown", function()
         {
+            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
             console.log("PULUT")
             localStorage.setItem("flower", "PULUT TAI TAI");
             
