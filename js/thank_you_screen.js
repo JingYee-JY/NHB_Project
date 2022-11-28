@@ -86,6 +86,9 @@ export function registerThankYouScreen(lose)
             localStorage.setItem("flower", "FORMER THONG CHAI MEDICAL INSTITUTION");
 
             Selection.onLoad();
+
+            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             
         });
 
