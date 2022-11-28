@@ -55,6 +55,8 @@ div[id='Falling Genes'], #MCQ {
     align-items: center;
     text-align: center;
 
+    pointer-events: none;
+
     width: 100px;
     height: 100px;
 
