@@ -121,6 +121,7 @@ export function end(gameName, clearGame,timerVariable, ...timerVariables){
     window.scrollTo(0, 0);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
+    
     gameStarted = false;
 
     if(timerVariable != null){

@@ -49,7 +49,7 @@ export function registerThankYouScreen(lose)
         resultBackground.style.marginTop = "30px"
         resultBackground.style.marginBottom = "-20px"
     }
-    else
+    if(!lose)
     {
 
         resultsTitle.textContent = "YOU WIN!";
@@ -59,7 +59,7 @@ export function registerThankYouScreen(lose)
         //resultBackground.style.background = `url("./css/images/win.png") no-repeat`
         resultBackground.style.backgroundSize = "100% 100%"
         resultImage.src = "./css/images/trophy.png"
-        document.getElementById("navigate_camera").pointerdown = Main.navigateToCamera;
+        camera.onmousedown = Main.navigateToCamera;
         camera.style.opacity = 1;
         resultBackground.style.marginTop = "55px"
         resultBackground.style.marginBottom = "-70px"
