@@ -446,7 +446,7 @@ export function onGameInfoLoad()
     
 
         
-        document.body.innerHTML = html2 + document.body.innerHTML;
+        document.querySelector(".game-container").innerHTML = html2 + document.querySelector(".game-container").innerHTML;
         w3.includeHTML();
 
         if(flowerInformation.game.name.includes("Falling Genes"))

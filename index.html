@@ -25,16 +25,29 @@
 
   
 
+    <div class="splash">
+      <div class="top">
+        <img src="./css/main_menu/logo.svg" class="logo">
+      </div>
+      <div class="info-container">
+        <div class="info">
+          <div class="info-text">For the best experience, please <br> rotate your phone vertically.</div>
+          <img class="rotate" src="./css/images/rotate.png">
+        </div>
+      </div>
+    </div>
     
-    <div id="splash_screen" w3-include-html="./pages/splash_screen.html" class="splash_screen_unloaded"></div>
+    <div class="game-container">
+      <div id="splash_screen" w3-include-html="./pages/splash_screen.html" class="splash_screen_unloaded"></div>
 
-    <div id="camera_screen" class="hide" w3-include-html="./pages/camera_screen.html"></div>
-
-    <div id="selection_screen" class="starting" w3-include-html="./pages/selection_screen.html"></div>
-
-    <div id="main_screen" class="hide" w3-include-html="./pages/main_screen.html"></div>
-
-    <div id="thank_you_screen" class="hide" w3-include-html="./pages/thank_you_screen.html"></div>
+      <div id="camera_screen" class="hide" w3-include-html="./pages/camera_screen.html"></div>
+  
+      <div id="selection_screen" class="starting" w3-include-html="./pages/selection_screen.html"></div>
+  
+      <div id="main_screen" class="hide" w3-include-html="./pages/main_screen.html"></div>
+  
+      <div id="thank_you_screen" class="hide" w3-include-html="./pages/thank_you_screen.html"></div>
+    </div>
 
     <script src="js/threejs.js"></script>
 
