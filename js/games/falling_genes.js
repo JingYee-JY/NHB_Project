@@ -98,7 +98,7 @@ export function startGame()
 
 
                 var geneObject = new GeneObject(randomGene, geneHTML,
-                    Math.random() * (4 - 2) + 1)
+                    Math.random() * (4 - 2) + 2)
 
                 existingGenes.push(geneObject);
 
