@@ -76,11 +76,11 @@
 .top{
     display: flex;
     justify-content: center;
-    height: 20vh;
 }
 
 .logo{
     max-width: 15%;
+    margin-top: 15px;
 }
 
 .info-text{
