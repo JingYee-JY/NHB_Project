@@ -46,7 +46,7 @@
         position: fixed;
         width: 100%;
     }
-    .game-container{
+    .whole-container{
         visibility: hidden;
         display: none;
     }

@@ -186,3 +186,9 @@ button {
 .end{
     height: 238px !important;
 }
+
+.endImage{
+    height: 33%;
+    width: auto !important;
+    align-self: center;
+}
