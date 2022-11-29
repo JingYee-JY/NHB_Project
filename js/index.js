@@ -220,7 +220,7 @@ export function initCamera(spritePath)
 
                         ctx.drawImage(mediaInstance, 0, 0, window.innerWidth, window.innerHeight);
                         
-            
+                        ctx.setTransform(-1,0,0,1,canvas.width,0)
                   
                  
                         timeout = setTimeout(loop, 1000 / 60);
@@ -231,7 +231,7 @@ export function initCamera(spritePath)
                         ctx.clearRect(45, 45, 60, 60);
                         ctx.strokeRect(50, 50, 50, 50);*/
 
-                        ctx.drawImage(image, x - 50, y - 50, imageWidth, imageHeight);
+                        ctx.drawImage(image, -(x - 50), y - 50, imageWidth, imageHeight);
 
                   
                     })();
@@ -306,6 +306,7 @@ function takeScreenshot()
     //image.src = document.getElementById("image_canvas").toDataURL('image/jpeg', 100);
     
     console.log(myCanvas)
+    
     
     image.onload = function ()
     {

@@ -35,11 +35,6 @@ body {
 
 }
 
-#camera_canvas {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
 #retake-photo {
 
     background: url("camera/retake_photo.svg");
