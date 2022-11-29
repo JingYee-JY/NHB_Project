@@ -86,7 +86,6 @@ export function App(name, modelPath, scale, alphaMapArray, location) {
 
       var previewModel = document.getElementById("preview_model");
         var threeDimensionIndicator = document.getElementById("threeD_canvas_icon");
-        var threeDimensionIndicator2 = document.getElementById("threeD_canvas_icon2");
         
      
     
@@ -99,11 +98,9 @@ export function App(name, modelPath, scale, alphaMapArray, location) {
             interval = setInterval(function () {
               console.log("test")
               
-              if(threeDimensionIndicator2.style.opacity >= 0)
+              if(threeDimensionIndicator.style.opacity >= 0)
               {
                 threeDimensionIndicator.style.opacity-= 0.1;
-                threeDimensionIndicator2.style.opacity -= 0.1;
-                threeDimensionIndicator2.style.animation = "paused"
               }
               else
               {
@@ -138,7 +135,6 @@ export function App(name, modelPath, scale, alphaMapArray, location) {
     
         var previewModel = document.getElementById("preview_model");
         var threeDimensionIndicator = document.getElementById("threeD_canvas_icon");
-        var threeDimensionIndicator2 = document.getElementById("threeD_canvas_icon2");
         
      
     
@@ -151,11 +147,9 @@ export function App(name, modelPath, scale, alphaMapArray, location) {
             interval = setInterval(function () {
               console.log("test")
               
-              if(threeDimensionIndicator2.style.opacity >= 0)
+              if(threeDimensionIndicator.style.opacity >= 0)
               {
                 threeDimensionIndicator.style.opacity-= 0.1;
-                threeDimensionIndicator2.style.opacity -= 0.1;
-                threeDimensionIndicator2.style.animation = "paused"
               }
               else
               {

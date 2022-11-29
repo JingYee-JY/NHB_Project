@@ -307,7 +307,6 @@ function takeScreenshot()
     
     console.log(myCanvas)
     
-    
     image.onload = function ()
     {
         
