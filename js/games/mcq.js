@@ -164,7 +164,7 @@ export function startGame()
     }
 
     if(Main.flowerInformation.name == "PULUT TAI TAI"){
-        document.querySelector(".info").classList.add("hideO")
+        document.querySelector(".help").classList.add("hideO")
     }
 
     MainPage.App(Main.flowerInformation.name,Main.flowerInformation.modelPath, Main.flowerInformation.scale, Main.flowerInformation.alphaMapArray, false);

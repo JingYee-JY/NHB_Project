@@ -186,3 +186,7 @@ button {
 .end{
     height: 238px !important;
 }
+
+.bold{
+    font-weight: 700;
+}
