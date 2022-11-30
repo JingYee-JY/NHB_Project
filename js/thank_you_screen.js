@@ -62,7 +62,7 @@ export function registerThankYouScreen(lose)
         camera.onmousedown = Main.navigateToCamera;
         camera.style.opacity = 1;
         resultBackground.style.marginTop = "45px"
-        resultBackground.style.marginBottom = "-85px"
+        resultBackground.style.marginBottom = "-95px"
     }
     
     againButton.onmousedown = function () {

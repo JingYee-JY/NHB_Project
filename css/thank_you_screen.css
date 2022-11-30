@@ -32,7 +32,7 @@
     color: #F0AC00;
     font-size: 2.3em;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 80%;
 }
 
@@ -118,6 +118,7 @@ button {
 
 #content_description1{
     margin-bottom: 5px;
+    margin-top: -5px;
 }
 
 #content_description2{
